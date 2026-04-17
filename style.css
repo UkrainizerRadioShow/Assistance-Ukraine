@@ -56,3 +56,56 @@
     line-height: 1.65;
   }
 }
+
+
+#lumina-top-cta {
+  padding: 14px 0;
+  background: linear-gradient(90deg, #7c1f53 0%, #b93b7b 50%, #7c1f53 100%);
+}
+
+#lumina-top-cta-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+#lumina-top-cta-text {
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+#lumina-top-cta-button {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #7c1f53;
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#lumina-top-cta-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.24);
+}
+
+@media (max-width: 480px) {
+  #lumina-top-cta {
+    padding: 12px 0;
+  }
+
+  #lumina-top-cta-container {
+    gap: 10px;
+  }
+}
