@@ -5,6 +5,7 @@
 }
 
 #lumina-fest-container {
+
   text-align: center;
   max-width: 900px;
 }
@@ -17,6 +18,8 @@
   color: #8a2e5f;
 }
 
+
+
 #lumina-fest-description {
   margin: 0 auto 28px;
   max-width: 760px;
@@ -26,7 +29,8 @@
   color: #4a2c3c;
 }
 
-#lumina-fest-buy-button {
+#lumina-fest-buy-button,
+#lumina-fest-vendor-button {
   display: inline-block;
   padding: 14px 34px;
   border-radius: 999px;
@@ -41,12 +45,27 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-#lumina-fest-buy-button:hover {
+#lumina-fest-buy-button:hover,
+#lumina-fest-vendor-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 18px 40px rgba(138, 46, 95, 0.34);
 }
 
+
 @media (max-width: 768px) {
+  #lumina-fest-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  #lumina-fest-content {
+    text-align: center;
+  }
+
+  #lumina-fest-actions {
+    justify-content: center;
+  }
+
   #lumina-fest-section {
     padding: 70px 0;
   }
@@ -81,7 +100,8 @@
   text-transform: uppercase;
 }
 
-#lumina-top-cta-button {
+#lumina-top-cta-button,
+#lumina-top-cta-vendor-button {
   display: inline-block;
   padding: 10px 24px;
   border-radius: 999px;
@@ -95,7 +115,8 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-#lumina-top-cta-button:hover {
+#lumina-top-cta-button:hover,
+#lumina-top-cta-vendor-button:hover {
   transform: translateY(-1px);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.24);
 }
@@ -108,4 +129,34 @@
   #lumina-top-cta-container {
     gap: 10px;
   }
+}
+
+
+#lumina-fest-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 430px) 1fr;
+  align-items: center;
+  gap: 36px;
+}
+
+#lumina-fest-content {
+  text-align: center;
+}
+
+#lumina-fest-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Keep the main Lumina block centered on the page */
+#lumina-fest-layout {
+  display: block;
+}
+
+#lumina-fest-content {
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
 }
