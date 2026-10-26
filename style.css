@@ -57,3 +57,5 @@
 
 /* Template leftover "[01]" on the Projects page is hidden (keeps the title centered) */
 #ictl5s-2{visibility:hidden;}
+
+.footer-legal{padding:10px 0;font-family:Poppins,Arial,sans-serif;font-size:14px;line-height:22px;color:#6C6C6C;}
